@@ -26,9 +26,12 @@ class VentanaInicioSesion(tk.Frame):
         self.boton_registrar.pack(pady=10)
 
     def iniciar(self):
-        # Aquí se puede agregar la lógica de inicio de sesión
-        messagebox.showinfo("Inicio de Sesión", "Iniciando sesión...")
         self.iniciar_sesion()
+
+
+
+
+
 
 
 

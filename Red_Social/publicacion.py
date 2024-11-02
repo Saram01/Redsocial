@@ -1,25 +1,15 @@
-from comentario import Comentario
-from excepciones import PublicacionNoEncontrada
-
 class Publicacion:
-    def __init__(self, autor: str, texto: str, me_gusta=0, imagen=None):
+    def __init__(self, autor, texto):
         self.autor = autor
         self.texto = texto
-        self.imagen = imagen
-        self.me_gusta = me_gusta
+        self.me_gusta = 0
         self.comentarios = []
 
-    def dar_megusta(self):
+    def dar_me_gusta(self):
         self.me_gusta += 1
 
-    def agregar_comentario(self, autor: str, texto: str):
-        comentario = Comentario(autor, texto)
+    def agregar_comentario(self, comentario):
         self.comentarios.append(comentario)
-        return comentario
 
-    def eliminar_publicacion(self, publicacion, publicaciones):
-        if publicacion in publicaciones:
-            publicaciones.remove(publicacion)
-            self.autor.eliminar_publicacion_usuario(publicacion)
-        else:
-            raise PublicacionNoEncontrada("Publicacin no encontrada")
+
+
