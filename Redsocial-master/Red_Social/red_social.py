@@ -23,8 +23,6 @@ class RedSocial:
     def obtener_publicaciones(self):
         return self.publicaciones
 
-
-
-
+#PRINCIPAL
 
 
